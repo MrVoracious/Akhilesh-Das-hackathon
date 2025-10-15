@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="reportHeading">
+            <div>Topic:&nbsp;&nbsp;</div>
+            <span>Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</span>
+        </div>
+        <div class="modelName">
+            <div>Model:&nbsp;&nbsp;</div>
+            <span>llama-3.2-90b-vision-preview</span>
+        </div>
+    </nav>
+    <div class="leftBar">
+        <div class="projectName">AURA</div>
+        <div class="menu">
+            <div class="menuItem active">
+                <div class="icon"><i class="bi bi-chat-dots"></i></div>
+                <div class="menuItemName">Chat Bot</div>
+            </div>
+            <div class="menuItem">
+                <div class="icon"><i class="bi bi-flag"></i></div>
+                <div class="menuItemName">report</div>
+            </div>
+            <div class="menuItem">
+                <div class="icon"><i class="bi bi-box-arrow-right"></i></div>
+                <div class="menuItemName">Logout</div>
+            </div>
+        </div>
+        <div class="chatHistory">
+            <div class="chatHistoryHeading">Chats</div>
+            <div class="chat">
+                <div class="chatName">Transformer Architecture</div>
+                <div class="chatTime">2 hours ago</div>
+                <div class="visitIcon"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+            <div class="chat">
+                <div class="chatName">CNN vs Vision Transformers</div>
+                <div class="chatTime">Yesterday</div>
+                <div class="visitIcon"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+            <div class="chat">
+                <div class="chatName">BERT Embeddings</div>
+                <div class="chatTime">2 Days ago</div>
+                <div class="visitIcon"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profileBox">
+                <div class="aboutMe">
+                    <div class="pfp"><img
+                            src="https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg"
+                            alt=""></div>
+                    <div class="name">
+                        <div class="fullName">Vandit Kad</div>
+                        <div class="nameID">@vanditkad</div>
+                    </div>
+                    <div class="subscriptionStatus">
+                        <div class="box">
+                            Free
+                        </div>
+                    </div>
+                </div>
+                <div class="upgrade">
+                    <div class="box">
+                        Upgrade to plus
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rightBar">
+        <div class="infotainment">
+            <div class="notifications"><i class="bi bi-bell"></i></div>
+            <div class="pfp"><img
+                    src="https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg"
+                    alt=""></div>
+        </div>
+        <div class="highlight">
+            <div class="highlight-heading">
+                <span>Uploaded papers</span>
+                <div class="count">3</div>
+            </div>
+            <div class="paperBox">
+                <div class="paperName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed,
+                    reprehenderit fuga quam placeat laboriosam voluptate iure asperiores tempore deleniti et aperiam
+                    consectetur? Eius asperiores molestiae sapiente? Nobis, tenetur? Velit?</div>
+                <div class="openPaperIcon"><i class="bi bi-chevron-right"></i></div>
+            </div>
+            <div class="paperBox">
+                <div class="paperName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed,
+                    reprehenderit fuga quam placeat laboriosam voluptate iure asperiores tempore deleniti et aperiam
+                    consectetur? Eius asperiores molestiae sapiente? Nobis, tenetur? Velit?</div>
+                <div class="openPaperIcon"><i class="bi bi-chevron-right"></i></div>
+            </div>
+            <div class="paperBox">
+                <div class="paperName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed,
+                    reprehenderit fuga quam placeat laboriosam voluptate iure asperiores tempore deleniti et aperiam
+                    consectetur? Eius asperiores molestiae sapiente? Nobis, tenetur? Velit?</div>
+                <div class="openPaperIcon"><i class="bi bi-chevron-right"></i></div>
+            </div>
+        </div>
+        <div class="recommendedPapers">
+            <span class="recommendedPapers-heading">Recommended Papers</span>
+            <div class="paperBox">
+                <div class="paperName">paper-1</div>
+                <div class="paperQualities">
+                    <div class="quality">Vaswani et al.</div>
+                    <div class="quality">2017</div>
+                    <div class="quality">12pg</div>
+                    <div class="quality similarity">82%</div>
+                </div>
+                <div class="uploadIcon"><i class="bi bi-upload"></i></div>
+            </div>
+            <div class="paperBox">
+                <div class="paperName">paper-1</div>
+                <div class="paperQualities">
+                    <div class="quality">Vaswani et al.</div>
+                    <div class="quality">2017</div>
+                    <div class="quality">12pg</div>
+                    <div class="quality similarity">82%</div>
+                </div>
+                <div class="uploadIcon"><i class="bi bi-upload"></i></div>
+            </div>
+            <div class="paperBox">
+                <div class="paperName">paper-1</div>
+                <div class="paperQualities">
+                    <div class="quality">Vaswani et al.</div>
+                    <div class="quality">2017</div>
+                    <div class="quality">12pg</div>
+                    <div class="quality similarity">82%</div>
+                </div>
+                <div class="uploadIcon"><i class="bi bi-upload"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="chatbox" onclick="active(this)">
+        <div class="quote" id="quote"><img src="logo.png" alt=""> What report are we building today?</div>
+        <div class="upload" id="upload"><i class="bi bi-plus-lg"></i></div>
+        <div class="inputBox">
+            <input type="text" placeholder="Get a report">
+        </div>
+        <div class="submit"><i class="bi bi-send"></i></div>
+        <div class="files" id="files"></div>
+    </div>
+    <main id="main">
+        <div class="input">
+            <div class="pdfFiles">
+                <iframe src="sample.pdf" frameborder="0"></iframe>
+                <iframe src="sample.pdf" frameborder="0"></iframe>
+            </div>
+            <div class="inputBoxAI">
+                Generate a list of unique and creative features for a project report maker chatbot. For each feature,
+                include an icon (use Lucide or Feather icons) and a short one-line description. Make sure the features
+                go beyond typical AI models like Gemini or DeepSeek, focusing on research, visualization, and
+                collaboration tools.
+            </div>
+            <div class="outputBoxAI">
+                <header>
+                    <h1>Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</h1>
+                    <p><strong>Authors:</strong> DeepSeek-AI &lt;research@deepseek.com&gt;</p>
+                    <p><em>Source PDF:</em> Uploaded document.
+                </header>
+
+                <!-- Abstract -->
+                <section>
+                    <h2>Abstract</h2>
+                    <p>
+                        We introduce our first-generation reasoning models, <strong>DeepSeek-R1-Zero</strong> and
+                        <strong>DeepSeek-R1</strong>. DeepSeek-R1-Zero, trained via large-scale reinforcement learning
+                        (RL)
+                        without supervised fine-tuning (SFT) as a preliminary step, demonstrates strong reasoning
+                        capabilities.
+                        Through RL, DeepSeek-R1-Zero naturally emerges with powerful reasoning behaviors but faces
+                        issues
+                        such as poor readability and language mixing. DeepSeek-R1 augments this pipeline with
+                        multi-stage
+                        training and cold-start data before RL, achieving performance comparable to OpenAI-o1-1217 on
+                        reasoning tasks. To support research, we open-source DeepSeek-R1-Zero, DeepSeek-R1, and several
+                        distilled dense models.
+                        <div class="citation" onmouseover="showCitation()" onmouseout="document.getElementById('citation').style.opacity=`0`">
+                            <i class="bi bi-link-45deg"></i>
+                            <div class="citationDetails" id="citation">
+                                <div class="citationTitle">
+                                    sample.pdf
+                                </div>
+                                <div class="citationDesc">
+                                    <span>Page: 12,</span>
+                                    <span>Line: 20,</span>
+                                    <span>context: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias laborum alias temporibus velit! Voluptatem vitae possimus earum fugit quaerat perferendis eos, voluptatibus odio distinctio itaque. Nam expedita sit maiores!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </section>
+
+                <section>
+                    <img width="500" src="Screenshot 2025-10-14 at 2.23.11 PM.png" alt="">
+                </section>
+
+                <!-- Introduction -->
+                <section id="introduction">
+                    <h2>1. Introduction</h2>
+                    <p>
+                        In recent years, large language models (LLMs) have rapidly improved, closing gaps toward AGI.
+                        Post-training techniques like RL and other post-training methods have been effective at
+                        improving
+                        reasoning and aligning models with user preferences. This paper explores using pure
+                        reinforcement
+                        learning (without supervised fine-tuning) to incentivize reasoning capabilities in LLMs and
+                        presents
+                        the DeepSeek-R1 family of models.
+                        [oai_citation:7‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+                </section>
+
+                <!-- Contributions -->
+                <section id="contributions">
+                    <h2>1.1 Contributions</h2>
+                    <ul>
+                        <li>
+                            <strong>Post-Training via Large-Scale RL:</strong> We directly apply RL to the base model
+                            without
+                            relying on SFT as a preliminary step, yielding DeepSeek-R1-Zero. It demonstrates properties
+                            like
+                            self-verification, reflection, and long chain-of-thought (CoT) reasoning.
+                        </li>
+                        <li>
+                            <strong>Pipeline for Readability &amp; Performance:</strong> Introducing a cold-start SFT
+                            stage and multi-stage
+                            RL leads to DeepSeek-R1, which balances readability with strong reasoning performance.
+                        </li>
+                        <li>
+                            <strong>Distillation to Smaller Models:</strong> Reasoning abilities discovered by
+                            DeepSeek-R1 are distilled
+                            into smaller dense models (1.5B–70B), showing strong improvements over baseline open models.
+                        </li>
+                    </ul>
+                    <p>Source material: paper sections and contribution summary.
+                        [oai_citation:8‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)</p>
+                </section>
+
+                <!-- Summary of evaluation -->
+                <section id="summary-results">
+                    <h2>1.2 Summary of Evaluation Results</h2>
+                    <p>
+                        DeepSeek-R1 attains high performance on reasoning and knowledge benchmarks:
+                    </p>
+                    <ul>
+                        <li>Reasoning: 79.8% Pass@1 on AIME 2024; 97.3% Pass@1 on MATH-500; strong Codeforces rating
+                            (~2029 ELO).</li>
+                        <li>Knowledge &amp; benchmarks: strong scores on MMLU, MMLU-Pro and GPQA Diamond; competitive
+                            with
+                            other leading closed- and open-source models.</li>
+                        <li>Other strengths: writing, summarization, and long-context understanding — with concise
+                            summaries
+                            on evaluation sets.
+                            [oai_citation:9‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)</li>
+                    </ul>
+                </section>
+
+                <!-- Approach -->
+                <section id="approach">
+                    <h2>2. Approach</h2>
+
+                    <h3>2.1 Overview</h3>
+                    <p>
+                        We explore improving LLM reasoning via large-scale RL. Two main variants:
+                        DeepSeek-R1-Zero (pure RL without SFT) and DeepSeek-R1 (cold-start SFT + RL). We also distill
+                        the
+                        resulting reasoning patterns into smaller dense models.
+                        [oai_citation:10‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+
+                    <h3>2.2 DeepSeek-R1-Zero: Reinforcement Learning on the Base Model</h3>
+                    <p>
+                        The key idea is to apply RL directly to base models to encourage chain-of-thought style
+                        reasoning.
+                        The training enforces an output template (reasoning process + final answer) and uses rule-based
+                        rewards for accuracy and format. Over many RL steps the model developed reflective behaviors and
+                        longer reasoning trajectories.
+                        [oai_citation:11‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+
+                    <h4>2.2.1 Reinforcement Learning Algorithm</h4>
+                    <p>
+                        The paper adopts a Group Relative Policy Optimization (GRPO) formulation to reduce RL training
+                        costs.
+                        (See the paper for the mathematical objective and advantage calculation.)
+                        [oai_citation:12‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+
+                    <h4>2.2.2 Reward Modeling</h4>
+                    <p>
+                        Two principal reward types: <em>accuracy rewards</em> (rule-based verification of final answers
+                        where possible)
+                        and <em>format rewards</em> (enforcing explicit CoT formatting, e.g.,
+                        <code>&lt;think&gt; ... &lt;/think&gt;</code> tags).
+                        The authors avoid (for R1-Zero) learned neural reward models to reduce reward-hacking risks.
+                        [oai_citation:13‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+
+                    <h3>2.3 DeepSeek-R1: Reinforcement Learning with Cold Start</h3>
+                    <p>
+                        To improve readability and stabilize RL, DeepSeek-R1 starts from a cold-start SFT checkpoint
+                        created
+                        from curated long CoT examples, then applies reasoning-oriented RL, rejection sampling to gather
+                        SFT data,
+                        and further RL to align with human preferences. This pipeline produces a model that is both
+                        readable and
+                        strong at reasoning.
+                        [oai_citation:14‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+
+                    <h3>2.4 Distillation</h3>
+                    <p>
+                        The reasoning outputs of DeepSeek-R1 are used to fine-tune smaller dense models (Qwen / Llama
+                        families),
+                        producing distilled models that substantially improve benchmarks for smaller models. The
+                        distilled models
+                        show state-of-the-art results among open-source dense models for some reasoning benchmarks.
+                        [oai_citation:15‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+                </section>
+
+                <!-- Experiment -->
+                <section id="experiment">
+                    <h2>3. Experiment</h2>
+                    <p>
+                        Models are evaluated on multiple benchmarks: MMLU, MATH-500, AIME 2024, Codeforces,
+                        LiveCodeBench,
+                        GPQA Diamond, and additional evaluation suites. Evaluation protocols use pass@k with sampling
+                        (temperature
+                        &amp; top-p), and consensus voting for select tasks. Key comparisons show DeepSeek-R1 and
+                        distilled variants
+                        outperform many baselines on reasoning tasks.
+                        [oai_citation:16‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+
+                    <h3>Representative Results</h3>
+                    <p>
+                        Tables in the paper compare DeepSeek-R1 to baselines (OpenAI o1 variants, GPT-4o, Claude,
+                        DeepSeek-V3).
+                        Notable highlights include very strong math/coding benchmark results and high long-context
+                        performance.
+                    </p>
+                </section>
+
+                <!-- Discussion -->
+                <section id="discussion">
+                    <h2>4. Discussion</h2>
+                    <p>
+                        Two important takeaways: (1) distillation of powerful models into smaller ones is an efficient
+                        way to
+                        transfer reasoning patterns, often outperforming direct RL on small models; (2) RL-only
+                        approaches can
+                        discover reasoning behaviors but face readability and stability challenges that cold-start SFT
+                        helps mitigate.
+                    </p>
+
+                    <h3>4.1 Distillation vs Reinforcement Learning</h3>
+                    <p>
+                        The paper shows distilled models (from DeepSeek-R1) outperform models that underwent RL directly
+                        at
+                        smaller scales, indicating distillation is an effective strategy for democratizing reasoning
+                        capabilities.
+                        [oai_citation:17‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+
+                    <h3>4.2 Unsuccessful Attempts</h3>
+                    <p>
+                        The authors report experiments that did not scale well, for example tightly coupled process
+                        reward models
+                        and MCTS-like search for token generation, which have practical scaling difficulties and risks
+                        of reward-hacking.
+                    </p>
+                </section>
+
+                <!-- Conclusion -->
+                <section id="conclusion">
+                    <h2>5. Conclusion, Limitations, and Future Work</h2>
+                    <p>
+                        DeepSeek-R1-Zero shows that reasoning capabilities can emerge through pure RL; DeepSeek-R1
+                        demonstrates
+                        that combining cold-start SFT with RL yields readable and strong reasoning models. Future work
+                        includes
+                        improving general capabilities (function-calling, multi-turn), dealing with language mixing, and
+                        better
+                        efficiency for software engineering tasks.
+                        [oai_citation:18‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+                </section>
+
+                <!-- References & Acknowledgments -->
+                <section id="references">
+                    <h2>References &amp; Acknowledgments</h2>
+                    <p>
+                        The paper contains an extensive reference list (OpenAI, Anthropic, Qwen, Llama model cards, and
+                        multiple
+                        research works) and a long contributors list. See the uploaded PDF for the full reference block
+                        and
+                        alphabetical authors/acknowledgments.
+                        [oai_citation:19‡2501.12948v1.pdf](sediment://file_000000002104622f8d52d56575fa332d)
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="chatbot.js"></script>
+
+</html>
